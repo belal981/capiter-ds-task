@@ -7,3 +7,4 @@ pandas_profiling==3.2.0
 scikit_learn==1.1.0
 scipy==1.7.3
 seaborn==0.11.2
+ortools==9.3.10497
