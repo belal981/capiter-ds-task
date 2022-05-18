@@ -45,7 +45,7 @@ def process_solution(data, manager, routing, solution):
             route_distance += routing.GetArcCostForVehicle(
                 previous_index, index, truck_id
             )
-            truck_route += "{0} Load({1}) -> ".format(node_index, route_load)
+            truck_route += f"Total_Load: {route_load} @ Location: {node_index} -> "
         trucks['id'].append(truck_id)
         trucks['route_distance'].append(route_distance)
         trucks['route'].append(truck_route[:-4]) #remove last symbol

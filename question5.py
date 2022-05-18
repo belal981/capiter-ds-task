@@ -33,7 +33,7 @@ def main():
     )
     trucks_dict = optimize_trucks(data)
     trucks_df = pd.DataFrame.from_dict(trucks_dict)
-    trucks_df.to_csv(f'{base_dir}trucks_solution.csv')
+    trucks_df.to_csv(f'{base_dir}trucks_solution.csv', index=False)
 
 if __name__ == "__main__":
     main()
