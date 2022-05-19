@@ -48,7 +48,7 @@ def process_solution(data, manager, routing, solution):
             truck_route += f"Total_Load: {route_load} @ Location: {node_index} -> "
         trucks['id'].append(truck_id)
         trucks['route_distance'].append(route_distance)
-        trucks['route'].append(truck_route[:-4]) #remove last symbol
+        trucks['route'].append(truck_route[:-4]) #remove last arrow
         trucks['route_load'].append(route_load)
     return trucks
 
